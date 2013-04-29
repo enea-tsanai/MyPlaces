@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="Settings">
+                <ListPreference
+                        android:title="Language"
+                        android:summary="Set the Languge to display the results"
+                        android:key="listPref"
+                        android:defaultValue="English"
+                        android:entries="@array/listArray"
+                        android:entryValues="@array/listValues" />
+                <ListPreference
+                        android:title="Google Maps UNIT distance"
+                        android:summary="Set the UNIT distance"
+                        android:key="listPref2"
+                        android:defaultValue="metric"
+                        android:entries="@array/listArray2"
+                        android:entryValues="@array/listValues2" />
+                <EditTextPreference
+                   android:key="pref_text"
+                   android:title="Google Maps Places Search Radius (in meters)"
+                   android:summary="Enter the desired radius range"
+                   android:defaultValue="100000"
+                   android:dialogTitle="Google Places Search Radius"
+                 />
+        </PreferenceCategory>
+</PreferenceScreen>
